@@ -23,11 +23,11 @@ jobs:
     steps:
       - name: Grant execute permission to Gradle wrapper
         run: chmod +x gradlew
-        working-directory: .  # 리포지토리 루트에서 실행되므로 working-directory를 비워두거나 .으로 설정
+        working-directory: 
 
       - name: Build with Gradle
         run: ./gradlew build
-        working-directory: .  # 리포지토리 루트에서 실행되므로 working-directory를 비워두거나 .으로 설정
+        working-directory:
 
       - uses: actions/checkout@v2
 
