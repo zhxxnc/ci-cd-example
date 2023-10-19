@@ -23,11 +23,11 @@ jobs:
     steps:
       - name: Grant execute permission to Gradle wrapper
         run: chmod +x gradlew
-        working-directory: .github/workflows
+        working-directory: src
 
       - name: Build with Gradle
         run: ./gradlew build
-        working-directory: .github/workflows
+        working-directory: src
 
       - uses: actions/checkout@v2
 
